@@ -1,0 +1,22 @@
+{
+  "name": "cljs-electron-hello",
+  "version": "1.0.0",
+  "description": "My first app using ElectronJS+cljs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuhriBernardes/electron-clojurescript-hello.git"
+  },
+  "author": "Yuhri Graziano Bernardes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuhriBernardes/electron-clojurescript-hello/issues"
+  },
+  "homepage": "https://github.com/YuhriBernardes/electron-clojurescript-hello#readme",
+  "devDependencies": {
+    "shadow-cljs": "^2.8.110"
+  }
+}
