@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "My first app using ElectronJS+cljs",
   "main": "app/js/main.js",
-    "scripts": {
-        "start": "electron ./app/main.js"
+  "scripts": {
+    "start": "electron ./app/main.js"
   },
   "repository": {
     "type": "git",

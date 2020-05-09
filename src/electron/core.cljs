@@ -36,3 +36,6 @@
   (.on app "ready" new-window)
   (.on app "activate" create-window)
   (.on app "window-all-close" quit))
+
+(defn ^:dev/after-load after []
+  (main))
