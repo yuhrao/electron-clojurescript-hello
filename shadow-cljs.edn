@@ -1,11 +1,18 @@
 ;; shadow-cljs configuration
 {:source-paths
- ["src/dev"
-  "src/main"
-  "src/test"]
+ ["src"]
 
  :dependencies
- []
+ [[reagent "0.10.0"]]
+
+ :dev-http {3030 "app"}
 
  :builds
- {}}
+ {:electron {:target    :node-script
+             :output-to "app/main.js"
+             :main      electron.core/main}
+
+  :reagent {:target     :browser
+            :output-dir "app/js"
+            :asset-path "js"
+            :modules    {:main {:init-fn electron.index/main}}}}}
