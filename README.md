@@ -2,7 +2,7 @@
 
 <p align="center">A project to learn how to use electronjs with reagent and clojurescript (Shadow-cljs).</p>
 <div align="center">
-  <img alt="Demo Reagent" src="https://raw.githubusercontent.com/YuhriBernardes/cljs-reagent-hello/master/doc/app.gif">
+  <img alt="Demo Reagent" style="width:100%" src="https://raw.githubusercontent.com/YuhriBernardes/electron-clojurescript-hello/master/doc/app.gif">
 </div>
 
 # Dependencies
