@@ -22,3 +22,12 @@
 - React Dom 16
 - Shadow CLJS 2.8 (Dev)
 - ElectronJS 8.2 (Dev)
+
+# Run the app
+
+### Dev
+```shell
+npm run build && npx electron ./app/main.js
+```
+
+## Linux (AppImage)
