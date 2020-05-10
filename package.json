@@ -1,27 +1,40 @@
 {
-  "name": "cljs-electron-hello",
-  "version": "1.0.0",
-  "description": "My first app using ElectronJS+cljs",
-  "main": "app/js/main.js",
-  "scripts": {
-    "start": "electron ./app/main.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YuhriBernardes/electron-clojurescript-hello.git"
-  },
-  "author": "Yuhri Graziano Bernardes",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YuhriBernardes/electron-clojurescript-hello/issues"
-  },
-  "homepage": "https://github.com/YuhriBernardes/electron-clojurescript-hello#readme",
-  "devDependencies": {
-    "electron": "^8.2.5",
-    "shadow-cljs": "^2.8.110"
-  },
-  "dependencies": {
-    "react": "16.13.0",
-    "react-dom": "16.13.0"
-  }
+    "name": "cljs-electron-hello",
+    "version": "1.0.0",
+    "description": "My first app using ElectronJS+cljs",
+    "main": "app/main.js",
+    "scripts": {
+        "start": "electron ./app/main.js",
+        "build": "shadow-cljs release electron reagent",
+        "dist": "npm run build && electron-builder"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YuhriBernardes/electron-clojurescript-hello.git"
+    },
+    "author": "Yuhri Graziano Bernardes",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/YuhriBernardes/electron-clojurescript-hello/issues"
+    },
+    "homepage": "https://github.com/YuhriBernardes/electron-clojurescript-hello#readme",
+    "devDependencies": {
+        "electron": "8.2.5",
+        "electron-builder": "^22.6.0",
+        "shadow-cljs": "2.8.110"
+    },
+    "dependencies": {
+        "react": "16.13.0",
+        "react-dom": "16.13.0"
+    },
+    "build":{
+        "appId": "br.com.yuhri.hello",
+        "productName": "HelloWorldApp",
+        "directories": {
+            "output": "dist"
+        },
+        "linux": {
+            "target": "AppImage"
+        }
+    }
 }

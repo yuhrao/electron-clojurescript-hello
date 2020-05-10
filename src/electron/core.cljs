@@ -17,7 +17,7 @@
 
     (.loadURL win file-url)
 
-    (.. win -webContents (openDevTools))
+    ;; (.. win -webContents (openDevTools))
 
     (reset! win-ref win)
 
