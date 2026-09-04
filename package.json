@@ -27,7 +27,7 @@
         "react": "16.13.0",
         "react-dom": "16.13.0"
     },
-    "build": {
+    "build":{
         "appId": "br.com.yuhri.hello",
         "productName": "HelloWorldApp",
         "directories": {
@@ -36,8 +36,5 @@
         "linux": {
             "target": "AppImage"
         }
-    },
-    "allowScripts": {
-        "electron@39.8.10": true
     }
 }
